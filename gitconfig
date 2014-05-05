@@ -43,7 +43,10 @@
     default = simple
 
 [credential]
-    helper = /opt/boxen/bin/boxen-git-credential
+helper = /opt/boxen/bin/boxen-git-credential
 
 [hub]
     protocol = https
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
